@@ -1,0 +1,9 @@
+services:
+    bb3mobi.agreed.listener:
+        class: bb3mobi\agreed\event\listener
+        arguments:
+            - @template
+            - %core.root_path%
+            - %core.php_ext%
+        tags:
+            - { name: event.listener }
